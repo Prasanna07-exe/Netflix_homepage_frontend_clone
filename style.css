@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins';
+    overflow-x: hidden;
+}
+.main{
+    background-image: url(Assets/Images/IN-en-20250512-TRIFECTA-perspective_688b8c03-78cb-46a6-ac1c-1035536f871a_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main button{
+    border: none;
+    width: 62px;
+    height: 30px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    cursor: pointer;
+}
+.signin a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.main section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;         
+    z-index: 10;
+    text-align: center;    
+}
+
+.holder{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    position: relative;
+    z-index: 10;
+    margin-top: 8px;
+}
+.holder input{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid grey;
+    color: grey;
+    border-radius: 2px;
+    margin: 2px;
+}
+.holder button{
+    padding: 2px;
+    font-size: 15px;
+    width: 130px;
+    height: 43px;
+    box-sizing: border-box;
+    transform: translatey(2%);
+}
+
+.content{
+    background-color: black;
+    width: auto;
+    height: auto;
+    
+}
+.content .trending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    text-decoration: underline solid red ;
+}
+.content .moviesl1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.moviesl1 li:hover{
+    transform: rotateX(25deg);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.content img{
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.img{
+    position: relative;
+}
+.img .number{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  text-shadow: 3px 3px 5px black;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+}
+.content .reasons{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline solid red;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.content .bits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.bits .bit{
+    height: 200px;
+    width: 180px;
+    color: white;
+    background-image: linear-gradient(to bottom right,rgb(8, 67, 122),rgb(33, 1, 39));
+    padding: 25px;
+    margin: 5px;
+    border-radius: 12px;
+    position: relative;
+}
+.bit h2{
+    font-size: 18px;
+}
+.bit p{
+    margin-top: 20px;
+    font-size: 12.5px;
+}
+.bit img{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border: none;
+}
+footer{
+    background-color: black;
+    height: 80vh;
+    width: 100vw;
+}
+footer .hold{
+    padding-bottom: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .text{
+    padding-top: 50px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+footer button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 2px;
+    height: 43px;
+    width: 140px;
+    font-size: 18px;
+    transform: translateY(5%);
+    margin-left: 2px;
+    cursor: pointer;
+}
+footer input{
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid grey;
+    color: grey;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+footer .question{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgb(200, 200, 200);
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    justify-content: center;
+    align-items: center;
+}
+footer .footbar{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 30px 30px 30px 30px ;
+    justify-content: center;
+    align-items: center;
+}
+.footbar a{
+    color: rgb(200, 200, 200);
+    font-size: 11px;
+}
+footer .dropdown{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    justify-content: center;
+    align-items: center;
+}
+footer .dropdown select{
+    background: transparent;
+    color: white;
+    padding: 2px;
+    font-size: 11px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 32px;
+    width: 130px;
+    margin: 2px;
+}
+.dropdown option{
+    color: black;
+    font-size: 11px;
+}
+footer .branding{
+    font-size: 11px;
+    color: rgb(200, 200, 200);
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    justify-content: center;
+    align-items: center;
+}
