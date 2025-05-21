@@ -49,7 +49,7 @@ nav button{
     background-color: red;
     color: white;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 12px;
     cursor: pointer;
 }
 .signin a{
@@ -71,7 +71,13 @@ nav button{
     z-index: 10;
     text-align: center;    
 }
-
+.main section h1{
+    font-size: 42px;
+}
+.main section .rate{
+    font-size: 18px;
+    font-weight: 550;
+}
 .holder{
     height: 50px;
     display: flex;
@@ -119,9 +125,12 @@ nav button{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
 }
 .moviesl1 li:hover{
     transform: rotateX(25deg);
@@ -188,12 +197,11 @@ nav button{
 }
 footer{
     background-color: black;
-    height: 80vh;
+    height: auto;
     width: 100vw;
 }
 footer .hold{
     padding-bottom: 100px;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +287,201 @@ footer .branding{
     color: rgb(200, 200, 200);
     display: grid;
     grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 100px;
     justify-content: center;
     align-items: center;
+}
+@media only screen and (max-width: 1300px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 350px 350px 350px;
+        
+    }
+    .content .bits{
+        flex-direction: column;
+    }
+    .bits .bit{
+        height: 20vh;
+        width: 60vw;
+    }
+    .bit h2{
+        font-size: 19px;
+    }
+    .bit p{
+        font-size: 16px;
+    }
+    footer .question{
+        grid-template-columns: 270px 270px 270px;
+    }
+    footer .footbar{
+        grid-template-columns: 270px 270px 270px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 270px 270px 270px;
+    }
+    footer .branding{
+        grid-template-columns: 270px 270px 270px;
+
+    }
+}
+@media only screen and (max-width: 1100px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 350px 350px 350px 350px;
+    }
+    footer .question{
+        grid-template-columns: 240px 240px 240px;
+    }
+    footer .footbar{
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 240px 240px 240px;
+    }
+    footer .branding{
+        grid-template-columns: 240px 240px 240px;
+
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .content .moviesl1{
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 350px 350px 350px 350px 350px;
+    }
+    footer .question{
+        grid-template-columns: 200px 200px 200px;
+        grid-column: 1/4;
+    }
+    footer .footbar{
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 200px 200px 200px;
+    }
+    footer .branding{
+        grid-template-columns: 200px 200px 200px;
+
+    }
+}
+@media only screen and (max-width: 700px){
+    footer .hold{
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .hold input{
+        width: 220px;
+    }
+    footer .hold button{
+        width: 90px;
+        font-size: 11px;
+        transform: translateY(-1%);
+    }
+    footer .question{
+        grid-template-columns: 240px 240px ;
+    }
+    footer .footbar{
+        grid-template-columns: 240px 240px ;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 240px 240px ;
+    }
+    footer .branding{
+        grid-template-columns: 240px 240px ;
+
+    }
+}
+@media only screen and (max-width: 550px){
+    .content .moviesl1{
+        grid-template-columns: 250px;
+        grid-template-rows: 300px 300px 300px;
+        justify-content: center;
+    }
+    .bit h2{
+        font-size: 16px;
+    }
+    .bit p{
+        font-size: 12px;
+    }
+    .main .holder{
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main section h1{
+        font-size: 34px;
+    }
+    footer .question{
+        grid-template-columns: 180px 180px ;
+    }
+    footer .footbar{
+        grid-template-columns: 180px 180px ;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 180px 180px ;
+    }
+    footer .branding{
+        grid-template-columns: 180px 180px ;
+
+    }
+}
+@media only screen and (max-width: 400px){
+    .main section h1{
+        font-size: 26px;
+    }
+    .main section .rate{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .holder{
+        flex-direction: column;
+    }
+    .holder input{
+        width: 220px;
+    }
+    .holder button{
+        width: 120px;
+    }
+    .trending h1{
+        font-size: 24px;
+    }
+    .reasons h1{
+        font-size: 24px;
+    }
+    footer .question{
+        grid-template-columns: 220px ;
+    }
+    footer .footbar{
+        grid-template-columns: 220px;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    }
+    footer .dropdown{
+        grid-template-columns: 220px ;
+    }
+    footer .branding{
+        grid-template-columns: 220px ;
+
+    }
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+    .main{
+        height: 100vh;
+    }
+    .main .box{
+        height: 100vh;
+    }
+    .main section h1{
+        font-size: 32px;
+    }
+    .bits .bit{
+        height: 25vh;
+    }
 }
